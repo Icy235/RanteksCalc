@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="8dp"
     android:background="@android:color/transparent"
     android:elevation="4dp"
-    android:padding="12dp">
+    android:padding="12dp"
+    tools:ignore="HardcodedText">
 
 
     <LinearLayout
@@ -26,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autofillHints="Имя заказа"
-            android:text="Имя заказа"
+            android:inputType="text"
             android:textStyle="bold" />
         <!-- Загруженность производства -->
         <LinearLayout
@@ -40,7 +41,8 @@
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
                 android:gravity="start"
-                android:text="Нагрузка"/>
+                android:text="Нагрузка"
+                />
 
             <FrameLayout
                 android:elevation="@dimen/cardview_default_radius"
@@ -58,6 +60,7 @@
                     android:background="@android:color/transparent"
                     android:gravity="center"
                     android:layout_gravity="center"
+                    android:importantForAutofill="no"
                     android:paddingStart="5sp"
                     android:paddingEnd="5sp"
                     android:paddingBottom="10sp"
@@ -97,6 +100,7 @@
                     android:background="@android:color/transparent"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:importantForAutofill="no"
                     android:paddingStart="5sp"
                     android:paddingEnd="5sp"
                     android:paddingBottom="10sp"

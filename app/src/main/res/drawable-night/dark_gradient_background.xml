@@ -6,7 +6,7 @@
     android:height="917dp"
     android:viewportWidth="412"
     android:viewportHeight="917"
-    tools:ignore="MissingDefaultResource">
+    tools:ignore="MissingDefaultResource,VectorRaster">
     <path
         android:pathData="M0 0H412V917H0z">
         <aapt:attr name="android:fillColor">

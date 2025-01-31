@@ -4,7 +4,7 @@ package com.example.rantekscalc
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
+
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
@@ -48,7 +48,7 @@ class ProfileListMenu : AppCompatActivity() {
                 intent.putExtra("work_time", profile.workTime)
                 intent.putExtra("work_price", profile.workPrice)
                 intent.putExtra("other_price", profile.otherPrice)
-                startActivityForResult(intent, REQUEST_CODE_CALCULATE)
+
             },
             onProfileChangeListener = { position, profile ->
                 saveProfiles() // Сохраняем изменения
@@ -75,6 +75,7 @@ class ProfileListMenu : AppCompatActivity() {
         loadProfiles()
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_CODE_CALCULATE && resultCode == RESULT_OK) {
@@ -83,16 +84,36 @@ class ProfileListMenu : AppCompatActivity() {
 
             if (profile != null) {
                 // Обновляем данные профиля
-                profile.rent = data.getStringExtra("rent") ?: "0"
-                profile.markup = data.getStringExtra("markup") ?: "0"
-                profile.pricePerKm = data.getStringExtra("price_per_km") ?: "0"
-                profile.distance = data.getStringExtra("distance") ?: "0"
-                profile.materialMass = data.getStringExtra("material_mass") ?: "0"
-                profile.materialPrice = data.getStringExtra("material_price") ?: "0"
-                profile.workTime = data.getStringExtra("work_time") ?: "0"
-                profile.workPrice = data.getStringExtra("work_price") ?: "0"
-                profile.otherPrice = data.getStringExtra("other_price") ?: "0"
-                profile.totalPrice = data.getStringExtra("total_price") ?: "0 р."
+                if (data != null) {
+                    profile.rent = data.getStringExtra("rent") ?: "0"
+                }
+                if (data != null) {
+                    profile.markup = data.getStringExtra("markup") ?: "0"
+                }
+                if (data != null) {
+                    profile.pricePerKm = data.getStringExtra("price_per_km") ?: "0"
+                }
+                if (data != null) {
+                    profile.distance = data.getStringExtra("distance") ?: "0"
+                }
+                if (data != null) {
+                    profile.materialMass = data.getStringExtra("material_mass") ?: "0"
+                }
+                if (data != null) {
+                    profile.materialPrice = data.getStringExtra("material_price") ?: "0"
+                }
+                if (data != null) {
+                    profile.workTime = data.getStringExtra("work_time") ?: "0"
+                }
+                if (data != null) {
+                    profile.workPrice = data.getStringExtra("work_price") ?: "0"
+                }
+                if (data != null) {
+                    profile.otherPrice = data.getStringExtra("other_price") ?: "0"
+                }
+                if (data != null) {
+                    profile.totalPrice = data.getStringExtra("total_price") ?: "0 р."
+                }
 
                 profileAdapter.notifyDataSetChanged()
                 saveProfiles()
