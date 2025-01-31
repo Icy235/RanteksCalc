@@ -28,7 +28,8 @@
             android:layout_height="wrap_content"
             android:autofillHints="Имя заказа"
             android:inputType="text"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="LabelFor" />
         <!-- Загруженность производства -->
         <LinearLayout
             style="@style/BaseCalculateModule"
