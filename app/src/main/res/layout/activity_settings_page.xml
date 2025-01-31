@@ -47,6 +47,7 @@
             android:layout_height="50dp"
             android:background="@android:color/transparent"
             style="@style/BaseText"
+            android:onClick="btnOther"
             android:text="@string/other"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

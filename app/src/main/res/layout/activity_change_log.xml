@@ -33,203 +33,143 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewHeader">
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:text="Alpha 0.0.1 \n
--Создание меню навигации, создание дизайна приложения">
-    </TextView>
+            <!-- Alpha 0.0.1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="Alpha 0.0.1\n- Создание меню навигации, создание дизайна приложения" />
 
+            <!-- Alpha 0.0.2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.0.2\n- Создание Меню Расчета и параметров" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.0.2 \n
--Создание Меню Расчета и параметров">
-    </TextView>
+            <!-- Alpha 0.1.0 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.1.0\n- Создание наполнения Меню Расчета и Параметров" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.1.0 \n
--Создание наполнения Меню Расчета и Параметров">
-    </TextView>
+            <!-- Alpha 0.1.1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.1.1\n- Создание темной темы приложения\n- Стилизация Меню Расчета Стоимости\n- Добавление теней\n- Создание переменных string" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="5"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.1.1 \n
--Создание темной темы приложения\n
--Стилизация Меню Расчета Стоимости\n
--Добавление теней\n
--Создание переменных string">
-    </TextView>
+            <!-- Alpha 0.2.0 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="4"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.2.0\n- Создание меню расчета Аренды\n- Стилизация меню расчета\n- Добавление AppPrefs для хранения значений" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="4"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.2.0 \n
--Создание меню расчета Аренды\n
--Стилизация меню расчета\n
--Добавление AppPrefs для хранения значений">
-    </TextView>
+            <!-- Alpha 0.2.1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.2.1\n- Создание меню расчета Логистики\n- Создание меню параметров Логистики\n- Стилизация меню Логистики\n- Добавление изображения Грузовика" />
 
+            <!-- Alpha 0.2.2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.2.2\n- Создание меню расчета Наценки\n- Стилизация меню Наценки" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="5"
-        android:layout_marginTop="10sp"
-        android:text="Aplha 0.2.1 \n
--Создание меню расчета Логостики\n
--Создание меню параметров Логистики\n
--Стилизация меню Логистики\n
--Добавление изображения Грузовика">
-    </TextView>
+            <!-- Alpha 0.3.0 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="6"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.3.0\n- Создание меню расчета Материала\n- Добавление переменных Названия материалов и их стоимости (Временное решение)\n- Создание адаптера для выбора материала (Больше не буду их использовать, тяжко)" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="3"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.2.2\n
--Создание меню расчета Наценки\n
--Стилизация меню Наценки">
-    </TextView>
+            <!-- Alpha 0.3.1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.3.1\n- Создание меню настройки стоимости Материалов\n- Стилизация" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="6"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.3.0\n
--Создания меню расчета Материала\n
--Добавление переменных Названия материалов и их стоимости(Временное решение)\n
--Создание адаптера для выбора материала (Больше не буду их использовать, тяжко) ">
-    </TextView>
+            <!-- Alpha 0.4.0 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.4.0\n- Добавление меню Трудозатрат\n- Создание метода расчета аренды в зависимости от трудозатрат\n- Стилизация" />
 
+            <!-- Alpha 0.4.1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.4.1\n- Исправление ошибок отображения стоимости трудозатрат на меню расчетов\n- Исправление часов трудозатрат на дни" />
 
+            <!-- Alpha 0.4.2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.4.2\n- Добавление меню ChangeLog для удобства" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="6"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.3.0\n
--Создания меню расчета Материала\n
--Добавление переменных Названия материалов и их стоимости(Временное решение)\n
--Создание адаптера для выбора материала (Больше не буду их использовать, тяжко) ">
-    </TextView>
+            <!-- Alpha 0.5.0 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.5.0\n- Добавление меню Прочее" />
 
+            <!-- Alpha 0.5.1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.5.1\n- Исправление ошибок отображения имен материалов в настройках цены материала" />
 
+            <!-- Alpha 0.5.2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="6"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.5.2\n- Исправление ошибок\n- Добавление функционала выбора имени материала\n- Улучшен код MaterialCalculate\n- Создано меню Настройки имени материала" />
 
+            <!-- Alpha 0.5.3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:layout_marginTop="10sp"
+                android:text="Alpha 0.5.3\n- Изменен цвет фона темной темы на градиент\n- Создан тестовый макет функции профилей (пока что находится в Настройки -> Прочее)\n- Уменьшение дублирования кода в activity_calculate_menu" />
 
+            <!-- Пустое пространство -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100sp" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="3"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.3.1 \n
--Создание меню настройки стоимости Материалов \n
--Стилизация ">
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="5"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.4.0 \n
--Добавление меню Трудозатрат\n
--Создание метода расчета аренды в зависимости от трудозатрат\n
--Стилизация ">
-    </TextView>
-
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="5"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.4.1 \n
--Исправление ошибок отображения стоимости трудозатрат на меню расчетов \n
--Исправление часов трудозатрат на дни ">
-    </TextView>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.4.2 \n
--Добавление меню ChangeLog для удобства ">
-    </TextView>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.5.0 \n
--Добавление меню Прочее">
-    </TextView>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="3"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.5.1 \n
--Исправление ошибок отображения имен материалов в настройках цены материала">
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="6"
-        android:layout_marginTop="10sp"
-        android:text="Alpha 0.5.2 \n
--Исправление ошибок\n
--Добавление функционала выбора имени материала\n
--Улучшен код MaterialCalcualte\n
--Создано меню Настройки имени материала">
-    </TextView>
-
-
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="100sp"/>
-
-
-</LinearLayout>
-
-
-
-
-
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,4 +41,12 @@ public class SettingsPage extends AppCompatActivity {
         startActivity(myIntent);
 
     }
+
+
+    public void btnOther(View view) {
+
+        Intent myIntent = new Intent(this, ProfileListMenu.class);
+        startActivity(myIntent);
+
+    }
 }

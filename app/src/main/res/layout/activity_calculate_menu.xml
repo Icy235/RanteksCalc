@@ -4,49 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context=".CalculateMenu">
 
-
-
-
+    <!-- Заголовок -->
     <Button
-        android:elevation="30sp"
         android:id="@+id/textViewHeader"
-        android:drawableLeft="@drawable/ic_go_back_arrow"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:fontFamily="@font/nunito_bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/HeaderButton"
         android:layout_marginTop="25dp"
         android:onClick="btnBack"
-        android:backgroundTint="@color/WhiteModeBack"
         android:text="@string/Calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
+    <!-- Основной контент -->
     <androidx.core.widget.NestedScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="550sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHeader">
+        app:layout_constraintTop_toBottomOf="@id/textViewHeader">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="5sp">
+            android:padding="5dp">
 
-
+            <!-- Материал -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -55,51 +44,32 @@
 
                 <Button
                     android:id="@+id/btnMaterial"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    style="@style/BaseText"
-                    android:background="@android:color/transparent"
-                    android:gravity="start"
+                    style="@style/BaseTextButton"
                     android:text="@string/material"
-                    android:onClick="btnMaterial"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:onClick="btnMaterial" />
 
                 <FrameLayout
-                    android:elevation="@dimen/cardview_default_radius"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
-                    android:background="@drawable/shape_input_field">
-
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextMaterial"
+                        style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        style="@style/BaseText"
                         android:gravity="end"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
-
             </LinearLayout>
 
+            <!-- Работа -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 android:id="@+id/linearLayout5"
@@ -108,28 +78,16 @@
 
                 <Button
                     android:id="@+id/btnWork"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    style="@style/BaseText"
-                    android:background="@android:color/transparent"
-                    android:gravity="start"
+                    style="@style/BaseTextButton"
                     android:text="@string/work"
-                    android:onClick="btnWork"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:onClick="btnWork" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextWork"
@@ -139,18 +97,13 @@
                         android:background="@android:color/transparent"
                         android:gravity="end"
                         android:hint="@string/NumberExample"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
             </LinearLayout>
 
+            <!-- Оборудование -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
@@ -159,99 +112,66 @@
 
                 <Button
                     android:id="@+id/btnEquipment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    style="@style/BaseText"
-                    android:gravity="start"
+                    style="@style/BaseTextButton"
                     android:text="@string/equipment"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:visibility="visible" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
+                        android:id="@+id/viewTextEquipment"
                         style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
                         android:gravity="end"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
             </LinearLayout>
 
+            <!-- Аренда -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout6"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
-
                 <Button
                     android:id="@+id/btnRent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    style="@style/BaseText"
-                    android:gravity="start"
-                    android:onClick="btnRent"
+                    style="@style/BaseTextButton"
                     android:text="@string/rent"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:onClick="btnRent"
+                    android:visibility="visible" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextRent"
+                        style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        style="@style/BaseText"
                         android:gravity="end"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
             </LinearLayout>
 
-
+            <!-- Логистика -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout7"
@@ -259,51 +179,33 @@
 
                 <Button
                     android:id="@+id/btnLogisticCalculate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    style="@style/BaseText"
-                    android:gravity="start"
-                    android:onClick="btnLogisticCalculate"
+                    style="@style/BaseTextButton"
                     android:text="@string/logistic"
-                    android:visibility="visible"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:onClick="btnLogisticCalculate"
+                    android:visibility="visible" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextLogisticCost"
+                        style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        style="@style/BaseText"
                         android:gravity="end"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
-
             </LinearLayout>
 
-
+            <!-- Прочее -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout8"
@@ -311,48 +213,32 @@
 
                 <Button
                     android:id="@+id/btnOther"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    android:gravity="start"
-                    style="@style/BaseText"
-                    android:onClick="btnOther"
+                    style="@style/BaseTextButton"
                     android:text="@string/other"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:onClick="btnOther" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextOther"
+                        style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        style="@style/BaseText"
                         android:gravity="end"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-                        android:paddingStart="5sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
             </LinearLayout>
 
+            <!-- Наценка -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout9"
@@ -360,108 +246,67 @@
 
                 <Button
                     android:id="@+id/btnMarkup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    style="@style/BaseText"
-                    android:gravity="start"
-                    android:onClick="btnMarkup"
+                    style="@style/BaseTextButton"
                     android:text="@string/markup"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:onClick="btnMarkup" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextMarkup"
+                        style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        style="@style/BaseText"
                         android:gravity="end"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
             </LinearLayout>
 
-
+            <!-- Итог -->
             <LinearLayout
                 style="@style/BaseCalculateModule"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout10"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:background="@android:color/transparent"
-                    style="@style/BaseText"
-                    android:text="@string/result"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.961" />
+                    android:id="@+id/btnResult"
+                    style="@style/BaseTextButton"
+                    android:text="@string/result" />
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10sp"
                     android:background="@drawable/shape_input_field"
-                    android:elevation="@dimen/cardview_default_radius">
-
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:id="@+id/viewTextResult"
+                        style="@style/BaseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        style="@style/BaseText"
                         android:gravity="end"
-                        android:paddingStart="5sp"
-                        android:paddingEnd="5sp"
-                        android:paddingBottom="10sp"
                         android:hint="@string/NumberExample"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.961" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp" />
                 </FrameLayout>
-
-
             </LinearLayout>
 
-
+            <!-- Пустое пространство -->
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="500sp">
-
-            </Space>
+                android:layout_height="500dp" />
         </LinearLayout>
-
-
     </androidx.core.widget.NestedScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@
     <string name="SettingsHead">Изменить параметры</string>
     <string name="CostRent">Цена помещения в месяц</string>
     <string name="CostForMass">руб за кг.</string>
-    <string name="Version">Alpha 0.5.2</string>
+    <string name="Version">Alpha 0.5.3</string>
     <string name="NumberExample">123456</string>
     <string name="ChoiceMaterial">Выбор материала</string>
 
@@ -41,6 +41,8 @@
     <string name="timeValue">час.</string>
     <string name="days">дней</string>
     <string name="OtherCost">Прочая затрата</string>
+    <string name="delete">Удалить</string>
+    <string name="redact">Редактировать</string>
 
 
     <integer name="steel_price">40</integer>

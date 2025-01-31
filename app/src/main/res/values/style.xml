@@ -26,6 +26,24 @@
     <item name="android:background">@drawable/shape_button_background</item>
 </style>
 
+    <!-- Стиль для кнопок в модулях -->
+    <style name="BaseTextButton" parent="BaseText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- Стиль для заголовка -->
+    <style name="HeaderButton" parent="BaseText">
+        <item name="android:drawableLeft">@drawable/ic_go_back_arrow</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:backgroundTint">@color/WhiteModeBack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 
 
 </resources>

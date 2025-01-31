@@ -75,6 +75,12 @@
             android:name=".MaterialNameSettings"
             android:exported="false" />
 
+
+
+        <activity
+            android:name=".ProfileListMenu"
+            android:exported="false" />
+
         <activity
             android:name=".MainMenu"
             android:exported="true">
