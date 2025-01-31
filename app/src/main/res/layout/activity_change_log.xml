@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
 
     <Button
         android:elevation="30sp"
         android:id="@+id/textViewHeader"
-        android:drawableLeft="@drawable/ic_go_back_arrow"
+        android:drawableStart="@drawable/ic_go_back_arrow"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:fontFamily="@font/nunito_bold"
@@ -16,7 +18,7 @@
         android:layout_marginTop="25dp"
         android:onClick="btnBack"
         android:backgroundTint="@color/WhiteModeBack"
-        android:text="ChangeLog"
+        android:text="@string/changelog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="2"
-                android:text="Alpha 0.0.1\n- Создание меню навигации, создание дизайна приложения" />
+                android:text="Alpha 0.0.1\n- Создание меню навигации, создание дизайна приложения"
+                tools:ignore="HardcodedText" />
 
             <!-- Alpha 0.0.2 -->
             <TextView

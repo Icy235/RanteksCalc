@@ -21,7 +21,7 @@
     <Button
         android:elevation="30sp"
         android:id="@+id/TitleTextSettings"
-        android:drawableLeft="@drawable/ic_go_back_arrow"
+        android:drawableStart="@drawable/ic_go_back_arrow"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:fontFamily="@font/nunito_bold"

@@ -43,6 +43,7 @@
     <string name="OtherCost">Прочая затрата</string>
     <string name="delete">Удалить</string>
     <string name="redact">Редактировать</string>
+    <string name="changelog">ChangeLog</string>
 
 
     <integer name="steel_price">40</integer>
