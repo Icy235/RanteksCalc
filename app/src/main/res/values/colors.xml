@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="BlackText">#000000</color>
+    <color name="WhiteText">#FFFFFFFF</color>
+
+    <color name="WhiteModeBack">#04171E</color>
+    <color name="WhiteModeElement">#C3EAF7</color>
+    <color name="WhiteModeInput">#E1F4FB</color>
+    <color name="WhiteModeLogo">#55C2E8</color>
+
+    <color name="DarkModeBack">#04171E</color>
+    <color name="DarkModeElement">#06232D</color>
+    <color name="DarkModeInput">#105D78</color>
+    <color name="DarkModeLogo">#126987</color>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo_fav_temp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_fav_temp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RanteksCalc"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SettingsPage"
+            android:exported="false" />
+
+        <activity
+            android:name=".LogisticPrice"
+            android:exported="false" />
+
+        <activity
+            android:name=".LogisticCalculate"
+            android:exported="false" />
+
+
+
+
+        <activity
+            android:name=".Rent"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".CalculateMenu"
+            android:exported="false" />
+
+        <activity
+            android:name=".MaterialCalculate"
+            android:exported="false" />
+
+        <activity
+            android:name=".WorkCalculate"
+            android:exported="false" />
+
+        <activity
+            android:name=".WorkSettings"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Markup"
+            android:exported="false" />
+
+        <activity
+            android:name=".MaterialSettings"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChangeLog"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Other"
+            android:exported="false" />
+
+        <activity
+            android:name=".MaterialSelectSettings"
+            android:exported="false" />
+
+        <activity
+            android:name=".MaterialNameSettings"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">RanteksCalc</string>
+
+    <string name="saveAndBack" translatable="false">Сохранить и выйти</string>
+    <string name="Back" translatable="false">Назад</string>
+
+    <string name="mass" translatable="false">кг.</string>
+    <string name="rub" translatable="false">руб.</string>
+    <string name="distanceValue" translatable="false">км.</string>
+
+    <string name="material" translatable="false">Материал</string>
+    <string name="work" translatable="false">Трудозатраты</string>
+    <string name="equipment" translatable="false">Оборудование</string>
+    <string name="rent" translatable="false">Аренда</string>
+    <string name="logistic" translatable="false">Логистика</string>
+    <string name="other" translatable="false">Прочее</string>
+    <string name="markup" translatable="false">Наценка</string>
+    <string name="result" translatable="false">Итог</string>
+
+
+    <string name="distance" translatable="false">Расстояние</string>
+
+    <string name="Calculate" translatable="false">Расчет стоимости</string>
+
+    <string name="CostDistance">Цена за километр пути</string>
+    <string name="SettingsHead">Изменить параметры</string>
+    <string name="CostRent">Цена помещения в месяц</string>
+    <string name="CostForMass">руб за кг.</string>
+    <string name="Version">Alpha 0.5.2</string>
+    <string name="NumberExample">123456</string>
+    <string name="ChoiceMaterial">Выбор материала</string>
+
+    <string name="MaterialVar1">Сталь</string>
+    <string name="MaterialVar2">Алюминий</string>
+    <string name="MaterialVar3">Титан</string>
+    <string name="MaterialVar4">Медь</string>
+
+
+
+
+    <string name="timeValue">час.</string>
+    <string name="days">дней</string>
+    <string name="OtherCost">Прочая затрата</string>
+
+
+    <integer name="steel_price">40</integer>
+    <integer name="aluminum_price">40</integer>
+    <integer name="copper_price">40</integer>
+    <integer name="titanium_price">40</integer>
+
+</resources>

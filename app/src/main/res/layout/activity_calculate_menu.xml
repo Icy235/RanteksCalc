@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".CalculateMenu">
+
+
+
+
+    <Button
+        android:elevation="30sp"
+        android:id="@+id/textViewHeader"
+        android:drawableLeft="@drawable/ic_go_back_arrow"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="btnBack"
+        android:backgroundTint="@color/WhiteModeBack"
+        android:text="@string/Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="550sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp">
+
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btnMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    style="@style/BaseText"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="@string/material"
+                    android:onClick="btnMaterial"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:elevation="@dimen/cardview_default_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field">
+
+
+                    <TextView
+                        android:id="@+id/viewTextMaterial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        style="@style/BaseText"
+                        android:gravity="end"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                android:id="@+id/linearLayout5"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <Button
+                    android:id="@+id/btnWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    style="@style/BaseText"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    android:text="@string/work"
+                    android:onClick="btnWork"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        android:id="@+id/viewTextWork"
+                        style="@style/BaseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="end"
+                        android:hint="@string/NumberExample"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                <Button
+                    android:id="@+id/btnEquipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    style="@style/BaseText"
+                    android:gravity="start"
+                    android:text="@string/equipment"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        style="@style/BaseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="end"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+                <Button
+                    android:id="@+id/btnRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    style="@style/BaseText"
+                    android:gravity="start"
+                    android:onClick="btnRent"
+                    android:text="@string/rent"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        android:id="@+id/viewTextRent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        style="@style/BaseText"
+                        android:gravity="end"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                <Button
+                    android:id="@+id/btnLogisticCalculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    style="@style/BaseText"
+                    android:gravity="start"
+                    android:onClick="btnLogisticCalculate"
+                    android:text="@string/logistic"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        android:id="@+id/viewTextLogisticCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        style="@style/BaseText"
+                        android:gravity="end"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+                <Button
+                    android:id="@+id/btnOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="start"
+                    style="@style/BaseText"
+                    android:onClick="btnOther"
+                    android:text="@string/other"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        android:id="@+id/viewTextOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        style="@style/BaseText"
+                        android:gravity="end"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+                        android:paddingStart="5sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout9"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                <Button
+                    android:id="@+id/btnMarkup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    style="@style/BaseText"
+                    android:gravity="start"
+                    android:onClick="btnMarkup"
+                    android:text="@string/markup"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        android:id="@+id/viewTextMarkup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        style="@style/BaseText"
+                        android:gravity="end"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/BaseCalculateModule"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout10"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    style="@style/BaseText"
+                    android:text="@string/result"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.961" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:background="@drawable/shape_input_field"
+                    android:elevation="@dimen/cardview_default_radius">
+
+
+                    <TextView
+                        android:id="@+id/viewTextResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        style="@style/BaseText"
+                        android:gravity="end"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:paddingBottom="10sp"
+                        android:hint="@string/NumberExample"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="500sp">
+
+            </Space>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

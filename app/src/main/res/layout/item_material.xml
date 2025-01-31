@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/shape_button_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="4dp"
+    android:elevation="5sp"> <!-- Уменьшаем margin между элементами -->
+
+<TextView
+
+
+     android:fontFamily="@font/nunito_bold"
+     android:id="@+id/textMaterial"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:padding="10sp"
+     android:text="@string/material"
+     android:textSize="20sp" />
+
+    </LinearLayout>

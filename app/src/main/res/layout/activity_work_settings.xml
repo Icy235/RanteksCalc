@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/TitleTextLogistic"
+        android:layout_width="340dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button_back_background"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:text="@string/work"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        style="@style/BaseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена за день работы"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button_background"
+        android:elevation="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextWorkPrice"
+            android:layout_width="230dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:autofillHints="creditCardNumber"
+            android:background="@drawable/shape_input_field"
+            android:fontFamily="@font/nunito_bold"
+            android:hint="@string/NumberExample"
+            android:inputType="number"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:textSize="30sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/HeaderTex"
+            android:layout_width="102dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="@string/rub"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:elevation="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_button_back_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/saveWork"
+            android:layout_width="279dp"
+            android:layout_height="56dp"
+            android:fontFamily="@font/nunito_bold"
+            android:background="@android:color/transparent"
+            android:onClick="btnSave"
+            android:text="@string/saveAndBack"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

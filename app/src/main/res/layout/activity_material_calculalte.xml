@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TitleTextMarkup"
+        android:layout_width="340dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_button_back_background"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:text="@string/material"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button_background"
+        android:elevation="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308">
+
+
+        <EditText
+            style="@style/HeaderTex"
+            android:hint="@string/NumberExample"
+            android:id="@+id/editTextMaterialMass"
+            android:layout_width="230sp"
+            android:layout_height="67dp"
+            android:layout_marginStart="30dp"
+            android:elevation="@dimen/cardview_default_radius"
+            android:background="@drawable/shape_input_field"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/HeaderTex"
+            android:layout_width="102dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="@string/mass"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BaseText"
+        android:text="@string/material"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3" />
+
+
+    <LinearLayout
+        android:elevation="30sp"
+        android:padding="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_field"
+            android:elevation="@dimen/cardview_default_radius">
+
+            <Button
+                android:id="@+id/selectMaterialButton"
+                android:hint="@string/material"
+                style="@style/HeaderTex"
+                android:layout_width="330sp"
+                android:layout_height="67dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:autofillHints="null"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:onClick="selectMaterialButton"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextPricePerKg"
+            android:hint="@string/NumberExample"
+            style="@style/HeaderTex"
+            android:layout_width="230dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="10sp"
+            android:autofillHints="null"
+            android:background="@drawable/shape_input_field"
+            android:inputType="number"
+
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:elevation="@dimen/cardview_default_radius"/>
+
+        <TextView
+            style="@style/VariantText"
+            android:layout_width="102dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="@string/CostForMass"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_button_back_background"
+        android:elevation="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            style="@style/VariantText"
+            android:id="@+id/SaveMaterialMass"
+            android:layout_width="279dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:onClick="saveMaterial"
+            android:text="@string/saveAndBack"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

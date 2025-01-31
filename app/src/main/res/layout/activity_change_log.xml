@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:elevation="30sp"
+        android:id="@+id/textViewHeader"
+        android:drawableLeft="@drawable/ic_go_back_arrow"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="btnBack"
+        android:backgroundTint="@color/WhiteModeBack"
+        android:text="ChangeLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="550sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Alpha 0.0.1 \n
+-Создание меню навигации, создание дизайна приложения">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.0.2 \n
+-Создание Меню Расчета и параметров">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.1.0 \n
+-Создание наполнения Меню Расчета и Параметров">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.1.1 \n
+-Создание темной темы приложения\n
+-Стилизация Меню Расчета Стоимости\n
+-Добавление теней\n
+-Создание переменных string">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.2.0 \n
+-Создание меню расчета Аренды\n
+-Стилизация меню расчета\n
+-Добавление AppPrefs для хранения значений">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:layout_marginTop="10sp"
+        android:text="Aplha 0.2.1 \n
+-Создание меню расчета Логостики\n
+-Создание меню параметров Логистики\n
+-Стилизация меню Логистики\n
+-Добавление изображения Грузовика">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.2.2\n
+-Создание меню расчета Наценки\n
+-Стилизация меню Наценки">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.3.0\n
+-Создания меню расчета Материала\n
+-Добавление переменных Названия материалов и их стоимости(Временное решение)\n
+-Создание адаптера для выбора материала (Больше не буду их использовать, тяжко) ">
+    </TextView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.3.0\n
+-Создания меню расчета Материала\n
+-Добавление переменных Названия материалов и их стоимости(Временное решение)\n
+-Создание адаптера для выбора материала (Больше не буду их использовать, тяжко) ">
+    </TextView>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.3.1 \n
+-Создание меню настройки стоимости Материалов \n
+-Стилизация ">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.4.0 \n
+-Добавление меню Трудозатрат\n
+-Создание метода расчета аренды в зависимости от трудозатрат\n
+-Стилизация ">
+    </TextView>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.4.1 \n
+-Исправление ошибок отображения стоимости трудозатрат на меню расчетов \n
+-Исправление часов трудозатрат на дни ">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.4.2 \n
+-Добавление меню ChangeLog для удобства ">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.5.0 \n
+-Добавление меню Прочее">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.5.1 \n
+-Исправление ошибок отображения имен материалов в настройках цены материала">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:layout_marginTop="10sp"
+        android:text="Alpha 0.5.2 \n
+-Исправление ошибок\n
+-Добавление функционала выбора имени материала\n
+-Улучшен код MaterialCalcualte\n
+-Создано меню Настройки имени материала">
+    </TextView>
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100sp"/>
+
+
+</LinearLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

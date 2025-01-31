@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".CalculateMenu">
+
+
+
+
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="340dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_button_back_background"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:text="@string/material"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TitleTextLogistic">
+
+
+                <TextView
+                    android:id="@+id/textViewMaterial1"
+                    style="@style/BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Материал 1"/>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_button_background"
+                    android:elevation="5sp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:padding="3sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_background">
+
+                        <EditText
+                            android:id="@+id/editTextMaterial1"
+                            android:layout_width="230dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/shape_input_field"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:hint="@string/MaterialVar1"
+                            android:inputType="text"
+                            android:paddingStart="10sp"
+                            android:paddingEnd="10sp"
+                            android:textSize="30sp"
+                            tools:ignore="LabelFor" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TitleTextLogistic">
+
+
+                <TextView
+                    android:id="@+id/textViewMaterial2"
+                    style="@style/BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Материал 2"/>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_button_background"
+                    android:elevation="5sp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:padding="3sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_background">
+
+                        <EditText
+                            android:id="@+id/editTextMaterial2"
+                            android:layout_width="230dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="1"
+                            android:autofillHints="creditCardNumber"
+                            android:background="@drawable/shape_input_field"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:hint="@string/MaterialVar2"
+                            android:inputType="text"
+                            android:paddingStart="10sp"
+                            android:paddingEnd="10sp"
+                            android:textSize="30sp"
+                            tools:ignore="LabelFor" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TitleTextLogistic">
+
+
+                <TextView
+                    android:id="@+id/textViewMaterial3"
+                    style="@style/BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Материал 3"/>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_button_background"
+                    android:elevation="5sp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:padding="3sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_background">
+
+                        <EditText
+                            android:id="@+id/editTextMaterial3"
+                            android:layout_width="230dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="1"
+                            android:autofillHints="creditCardNumber"
+                            android:background="@drawable/shape_input_field"
+
+                            android:fontFamily="@font/nunito_bold"
+                            android:hint="@string/MaterialVar3"
+                            android:inputType="text"
+                            android:paddingStart="10sp"
+                            android:paddingEnd="10sp"
+                            android:textSize="30sp"
+                            tools:ignore="LabelFor" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TitleTextLogistic">
+
+
+                <TextView
+                    android:id="@+id/textViewMaterial4"
+                    style="@style/BaseText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Материал 4"/>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_button_background"
+                    android:elevation="5sp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:padding="3sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_button_background">
+
+                        <EditText
+                            android:id="@+id/editTextMaterial4"
+                            android:layout_width="230dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_input_field"
+                            android:fontFamily="@font/nunito_bold"
+                            android:hint="@string/MaterialVar4"
+                            android:inputType="text"
+                            android:paddingStart="10sp"
+                            android:paddingEnd="10sp"
+                            android:textSize="30sp"
+                            tools:ignore="LabelFor" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_button_back_background"
+        android:elevation="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="279dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/nunito_bold"
+            android:onClick="btnSave"
+            android:text="@string/saveAndBack"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.961" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
