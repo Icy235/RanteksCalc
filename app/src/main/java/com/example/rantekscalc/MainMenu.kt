@@ -33,12 +33,12 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+             //ChangeLog
+       // binding.btnChangeLog.setOnClickListener{
 
-        binding.btnChangeLog.setOnClickListener{
-
-            val intent = Intent(this@MainMenu, ChangeLog:: class.java)
-            startActivity(intent)
-        }
+           // val intent = Intent(this@MainMenu, ChangeLog:: class.java)
+           // startActivity(intent)
+     //   }
 
 
     }

@@ -108,13 +108,14 @@
                 style="@style/BaseCalculateModule"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout5"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                android:visibility="gone">
 
                 <Button
                     android:id="@+id/btnEquipment"
                     style="@style/BaseTextButton"
                     android:text="@string/equipment"
-                    android:visibility="visible" />
+                     />
 
                 <FrameLayout
                     android:layout_width="wrap_content"

@@ -31,7 +31,7 @@ public class SettingsPage extends AppCompatActivity {
     }
     public void btnBack(View view) {
 
-        Intent myIntent = new Intent(this, MainMenu.class);
+        Intent myIntent = new Intent(this, HelperCalculate.class);
         startActivity(myIntent);
 
     }

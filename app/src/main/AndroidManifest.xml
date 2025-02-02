@@ -18,6 +18,28 @@
             android:exported="false" />
 
         <activity
+            android:name=".TutorialMenu"
+            android:exported="false" />
+
+        <activity
+            android:name=".HelperMain"
+            android:exported="true" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
+
+
+
+        <activity
             android:name=".LogisticPrice"
             android:exported="false" />
 
@@ -83,12 +105,20 @@
 
         <activity
             android:name=".MainMenu"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalculateTutorial"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".HelperCalculate"
+            android:exported="false">
+
         </activity>
     </application>
 

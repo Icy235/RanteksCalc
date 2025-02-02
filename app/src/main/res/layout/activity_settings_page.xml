@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -20,8 +21,8 @@
 
     <Button
         android:elevation="30sp"
-        android:id="@+id/TitleTextSettings"
-        android:drawableStart="@drawable/ic_go_back_arrow"
+        android:id="@+id/btnBack"
+        android:drawableLeft="@drawable/ic_go_back_arrow"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:fontFamily="@font/nunito_bold"
@@ -33,13 +34,15 @@
         android:text="@string/SettingsHead"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
 
     <LinearLayout
         style="@style/BaseCalculateModule"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/Eror"
@@ -86,7 +89,8 @@
         android:id="@+id/linearLayout12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/btnEquipment"
@@ -134,7 +138,7 @@
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleTextSettings">
+        app:layout_constraintTop_toBottomOf="@+id/btnBack">
 
         <Button
             android:id="@+id/btnMaterial"

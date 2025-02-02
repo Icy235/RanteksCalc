@@ -2,6 +2,7 @@
 package com.example.rantekscalc;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,12 @@ import android.widget.TextView;
 public class MaterialSettings extends AppCompatActivity {
     private AppPrefs appPrefs;
 
+
+
+
+
+
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,17 +44,16 @@ public class MaterialSettings extends AppCompatActivity {
 
 
         TextView Material1Text = findViewById(R.id.textViewMaterial1);
-        Material1Text.setText("Цена за кг " + getString(R.string.MaterialVar1));
+        Material1Text.setText("Цена за кг " + appPrefs.getMaterial1NameKey());
 
         TextView Material2Text = findViewById(R.id.textViewMaterial2);
-        Material2Text.setText("Цена за кг " + getString(R.string.MaterialVar2));
+        Material2Text.setText("Цена за кг " + appPrefs.getMaterial2NameKey());
 
         TextView Material3Text = findViewById(R.id.textViewMaterial3);
-        Material3Text.setText("Цена за кг " + getString(R.string.MaterialVar3));
+        Material3Text.setText("Цена за кг " + appPrefs.getMaterial3NameKey());
 
         TextView Material4Text = findViewById(R.id.textViewMaterial4);
-        Material4Text.setText("Цена за кг " + getString(R.string.MaterialVar4));
-
+        Material4Text.setText("Цена за кг " + appPrefs.getMaterial4NameKey());
 
     }
 
@@ -70,7 +76,7 @@ public class MaterialSettings extends AppCompatActivity {
         appPrefs.setMaterial4PriceKey(material_4_price_per_kg);
 
         // Перезапускаем CalculateMenu
-        Intent intent = new Intent(this, CalculateMenu.class);
+        Intent intent = new Intent(this, MaterialSelectSettings.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish(); // Закрываем текущую Activity

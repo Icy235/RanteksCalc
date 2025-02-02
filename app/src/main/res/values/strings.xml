@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">RanteksCalc</string>
 
-    <string name="saveAndBack" translatable="false">Сохранить и выйти</string>
+    <string name="saveAndBack" translatable="false">Сохранить</string>
     <string name="Back" translatable="false">Назад</string>
 
     <string name="mass" translatable="false">кг.</string>
@@ -26,7 +26,7 @@
     <string name="SettingsHead">Изменить параметры</string>
     <string name="CostRent">Цена помещения в месяц</string>
     <string name="CostForMass">руб за кг.</string>
-    <string name="Version">Alpha 0.5.3</string>
+    <string name="Version">1.0.0</string>
     <string name="NumberExample">123456</string>
     <string name="ChoiceMaterial">Выбор материала</string>
 

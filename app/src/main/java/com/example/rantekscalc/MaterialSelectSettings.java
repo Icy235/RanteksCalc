@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+
 
 public class MaterialSelectSettings extends AppCompatActivity {
-    private AppPrefs appPrefs;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MaterialSelectSettings extends AppCompatActivity {
     }
 
     public void btnBack(View view) {
-        Intent myIntent = new Intent(this, CalculateMenu.class);
+        Intent myIntent = new Intent(this, SettingsPage.class);
         startActivity(myIntent);
     }
 
@@ -32,4 +32,7 @@ public class MaterialSelectSettings extends AppCompatActivity {
         Intent myIntent = new Intent(this, MaterialNameSettings.class);
         startActivity(myIntent);
     }
+
+
+
 }

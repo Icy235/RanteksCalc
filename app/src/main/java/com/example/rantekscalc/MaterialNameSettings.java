@@ -2,12 +2,12 @@
 package com.example.rantekscalc;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+
 
 
 
@@ -60,7 +60,7 @@ public class MaterialNameSettings extends AppCompatActivity {
         appPrefs.setMaterial4NameKey(material_4_name);
 
         // Перезапускаем CalculateMenu
-        Intent intent = new Intent(this, CalculateMenu.class);
+        Intent intent = new Intent(this, MaterialSelectSettings.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish(); // Закрываем текущую Activity
