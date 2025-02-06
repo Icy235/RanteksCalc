@@ -1,10 +1,13 @@
-package com.example.rantekscalc;
+package CalculateMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.R;
 
 public class Other extends AppCompatActivity {
     private AppPrefs appPrefs;
@@ -19,6 +22,7 @@ public class Other extends AppCompatActivity {
 
         EditText OtherInput = findViewById(R.id.priceOther);
         OtherInput.setText(appPrefs.getOtherPriceKey());
+
     }
 
     public void btnBack(View view) {

@@ -1,5 +1,5 @@
 
-package com.example.rantekscalc;
+package SettingsMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
-
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.R;
 
 
 public class MaterialSettings extends AppCompatActivity {
@@ -54,6 +54,7 @@ public class MaterialSettings extends AppCompatActivity {
 
         TextView Material4Text = findViewById(R.id.textViewMaterial4);
         Material4Text.setText("Цена за кг " + appPrefs.getMaterial4NameKey());
+
 
     }
 

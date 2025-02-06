@@ -1,5 +1,5 @@
 
-package com.example.rantekscalc;
+package SettingsMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-
-
-
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.R;
 
 
 public class WorkSettings extends AppCompatActivity {
@@ -25,6 +24,7 @@ public class WorkSettings extends AppCompatActivity {
 
         EditText workPriceInput = findViewById(R.id.editTextWorkPrice);
         workPriceInput.setText(appPrefs.getWorkPriceKey());
+
     }
 
     public void btnSave(View view) {

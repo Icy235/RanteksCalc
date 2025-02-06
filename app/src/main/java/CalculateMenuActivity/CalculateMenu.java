@@ -1,4 +1,4 @@
-package com.example.rantekscalc;
+package CalculateMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.MainMenu;
+import com.example.rantekscalc.R;
 
 public class CalculateMenu extends AppCompatActivity {
     private AppPrefs appPrefs;
@@ -15,6 +19,7 @@ public class CalculateMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculate_menu);
+
 
         appPrefs = new AppPrefs(this);
 
@@ -47,6 +52,10 @@ public class CalculateMenu extends AppCompatActivity {
         double markupValue = (totalRent + totalLogistics + totalMaterial + totalWork + otherPrice) * (markupPercent / 100);
         double totalCost = totalRent + totalLogistics + markupValue + totalMaterial + totalWork + otherPrice;
 
+
+
+
+
         // Добавляю пояснение вывода руб.
 
 
@@ -71,6 +80,7 @@ public class CalculateMenu extends AppCompatActivity {
 
         TextView totalView = findViewById(R.id.viewTextResult);
         totalView.setText(String.format("%.2f руб.", totalCost));
+
 
 
     }

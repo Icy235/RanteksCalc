@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:context=".MainMenu">
 
 
 
@@ -13,11 +14,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+        <ImageButton
+            android:id="@+id/btnHelp"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:padding="10sp"
+            app:srcCompat="@android:drawable/ic_menu_help"
+            android:layout_gravity="end"
+            android:background="@drawable/shape_input_field"/>
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:layout_marginTop="50dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/app_name"
             app:srcCompat="@drawable/ic_logo_fav_temp" />
@@ -41,7 +53,8 @@
                 android:onClick="CalculatePage"
                 android:background="@android:color/transparent"
                 style="@style/VariantText"
-                android:text="@string/Calculate" />
+                android:text="@string/Calculate"
+                tools:ignore="OnClick" />
 
 
 
@@ -66,8 +79,9 @@
                 android:layout_gravity="center"
                 style="@style/VariantText"
                 android:background="@android:color/transparent"
-                android:onClick="SettingsPage"
-                android:text="@string/SettingsHead" />
+                android:onClick="settingsPage"
+                android:text="@string/SettingsHead"
+                tools:ignore="OnClick" />
 
         </LinearLayout>
 

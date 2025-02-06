@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-
+    tools:context="SettingsMenuActivity.MaterialSelectSettings"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -45,13 +45,13 @@
     <LinearLayout
         android:id="@+id/linearLayout16"
         style="@style/BaseCalculateModule"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+        app:layout_constraintTop_toBottomOf="@+id/btnBack">
 
         <Button
-            android:id="@+id/Eror"
+            android:id="@+id/btnMaterialName"
             style="@style/BaseText"
             android:layout_width="279dp"
             android:layout_height="50dp"
@@ -70,12 +70,9 @@
     <LinearLayout
         android:id="@+id/linearLayout13"
         style="@style/BaseCalculateModule"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
 
         <Button
             android:id="@+id/btnLogistic"

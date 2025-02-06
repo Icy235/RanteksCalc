@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".CalculateMenu">
+    tools:ignore="HardcodedText"
+    tools:context="CalculateMenuActivity.CalculateMenu">
 
 
 
@@ -63,7 +64,8 @@
                     style="@style/BaseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Материал 1"/>
+                    android:text="Материал 1"
+                     />
 
 
                 <LinearLayout
@@ -94,11 +96,12 @@
 
                             android:fontFamily="@font/nunito_bold"
                             android:hint="@string/MaterialVar1"
+                            android:importantForAutofill="no"
                             android:inputType="text"
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
 
                     </LinearLayout>
@@ -156,7 +159,7 @@
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
 
                     </LinearLayout>
@@ -214,7 +217,7 @@
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
 
                     </LinearLayout>
@@ -266,11 +269,12 @@
                             android:background="@drawable/shape_input_field"
                             android:fontFamily="@font/nunito_bold"
                             android:hint="@string/MaterialVar4"
+                            android:importantForAutofill="no"
                             android:inputType="text"
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
 
                     </LinearLayout>
@@ -311,7 +315,8 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.961" />
+            app:layout_constraintVertical_bias="0.961"
+            tools:ignore="OnClick" />
     </LinearLayout>
 
 

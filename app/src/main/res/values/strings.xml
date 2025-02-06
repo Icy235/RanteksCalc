@@ -1,48 +1,47 @@
 <resources>
-    <string name="app_name" translatable="false">RanteksCalc</string>
 
-    <string name="saveAndBack" translatable="false">Сохранить</string>
-    <string name="Back" translatable="false">Назад</string>
+    <string name="saveAndBack" translatable="true">Сохранить</string>
+    <string name="Back" translatable="true">Назад</string>
 
-    <string name="mass" translatable="false">кг.</string>
-    <string name="rub" translatable="false">руб.</string>
-    <string name="distanceValue" translatable="false">км.</string>
+    <string name="mass" translatable="true">кг.</string>
+    <string name="rub" translatable="true">руб.</string>
+    <string name="distanceValue" translatable="true">км.</string>
 
-    <string name="material" translatable="false">Материал</string>
-    <string name="work" translatable="false">Трудозатраты</string>
-    <string name="equipment" translatable="false">Оборудование</string>
-    <string name="rent" translatable="false">Аренда</string>
-    <string name="logistic" translatable="false">Логистика</string>
-    <string name="other" translatable="false">Прочее</string>
-    <string name="markup" translatable="false">Наценка</string>
-    <string name="result" translatable="false">Итог</string>
+    <string name="material" translatable="true">Материал</string>
+    <string name="work" translatable="true">Трудозатраты</string>
+    <string name="equipment" translatable="true">Оборудование</string>
+    <string name="rent" translatable="true">Аренда</string>
+    <string name="logistic" translatable="true">Логистика</string>
+    <string name="other" translatable="true">Прочее</string>
+    <string name="markup" translatable="true">Наценка</string>
+    <string name="result" translatable="true">Итог</string>
 
 
-    <string name="distance" translatable="false">Расстояние</string>
+    <string name="distance" translatable="true">Расстояние</string>
 
-    <string name="Calculate" translatable="false">Расчет стоимости</string>
+    <string name="Calculate" translatable="true">Расчет стоимости</string>
 
-    <string name="CostDistance">Цена за километр пути</string>
-    <string name="SettingsHead">Изменить параметры</string>
-    <string name="CostRent">Цена помещения в месяц</string>
-    <string name="CostForMass">руб за кг.</string>
-    <string name="Version">1.0.0</string>
+    <string name="CostDistance" translatable="true">Цена за километр пути</string>
+    <string name="SettingsHead" translatable="true">Изменить параметры</string>
+    <string name="CostRent" translatable="true">Цена помещения в месяц</string>
+    <string name="CostForMass" translatable="true">руб за кг.</string>
+    <string name="Version">1.1.0</string>
     <string name="NumberExample">123456</string>
-    <string name="ChoiceMaterial">Выбор материала</string>
+    <string name="ChoiceMaterial" translatable="true">Выбор материала</string>
 
-    <string name="MaterialVar1">Сталь</string>
-    <string name="MaterialVar2">Алюминий</string>
-    <string name="MaterialVar3">Титан</string>
-    <string name="MaterialVar4">Медь</string>
-
-
+    <string name="MaterialVar1" translatable="true">Сталь</string>
+    <string name="MaterialVar2" translatable="true">Алюминий</string>
+    <string name="MaterialVar3" translatable="true">Титан</string>
+    <string name="MaterialVar4" translatable="true">Медь</string>
 
 
-    <string name="timeValue">час.</string>
-    <string name="days">дней</string>
-    <string name="OtherCost">Прочая затрата</string>
-    <string name="delete">Удалить</string>
-    <string name="redact">Редактировать</string>
+
+
+    <string name="timeValue" translatable="true">час.</string>
+    <string name="days" translatable="true">дней</string>
+    <string name="OtherCost" translatable="true">Прочая затрата</string>
+    <string name="delete" translatable="true">Удалить</string>
+    <string name="redact" translatable="true">Редактировать</string>
     <string name="changelog">ChangeLog</string>
 
 
@@ -50,5 +49,7 @@
     <integer name="aluminum_price">40</integer>
     <integer name="copper_price">40</integer>
     <integer name="titanium_price">40</integer>
+    <string name="app_name" translatable="true">RanteksCalc</string>
+    <string name="cost_for_kg">Цена за кг</string>
 
 </resources>

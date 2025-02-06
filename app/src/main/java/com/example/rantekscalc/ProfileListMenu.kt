@@ -1,9 +1,11 @@
 package com.example.rantekscalc
 
 
+import CalculateMenuActivity.CalculateMenu
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 
 import android.widget.Button
 import android.widget.ImageButton
@@ -19,7 +21,7 @@ class ProfileListMenu : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_workload_main_menu)
+        setContentView(R.layout.activity_profile_main_menu)
 
         recyclerView = findViewById(R.id.recyclerViewProfiles)
         val btnAddProfile: ImageButton = findViewById(R.id.btnAddProfile)
@@ -60,7 +62,7 @@ class ProfileListMenu : AppCompatActivity() {
 
         // Обработчик добавления профиля
         btnAddProfile.setOnClickListener {
-            val newProfile = Profile("Новый заказ", "0", "Не указан", "0 р.")
+            val newProfile = Profile("", "", "", "0 р.")
             profiles.add(newProfile)
             profileAdapter.notifyItemInserted(profiles.size - 1)
             saveProfiles()
@@ -158,4 +160,12 @@ class ProfileListMenu : AppCompatActivity() {
     companion object {
         const val REQUEST_CODE_CALCULATE = 1001
     }
+
+    fun btnCalculateMenuProfile(view: View?) {
+        startActivity(Intent(this, CalculateMenu::class.java))
+    }
+
+
+
+
 }

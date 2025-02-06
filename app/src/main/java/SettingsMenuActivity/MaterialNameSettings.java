@@ -1,5 +1,5 @@
 
-package com.example.rantekscalc;
+package SettingsMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-
-
-
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.R;
 
 
 public class MaterialNameSettings extends AppCompatActivity {

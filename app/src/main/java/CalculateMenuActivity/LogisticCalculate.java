@@ -1,16 +1,15 @@
 
-package com.example.rantekscalc;
+package CalculateMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
-
-
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.R;
 
 
 public class LogisticCalculate extends AppCompatActivity {
@@ -25,6 +24,7 @@ public class LogisticCalculate extends AppCompatActivity {
 
         EditText distanceInput = findViewById(R.id.editTextDistance);
         distanceInput.setText(appPrefs.getDistance());
+
     }
 
     public void saveDistance(View view) {

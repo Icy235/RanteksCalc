@@ -1,9 +1,10 @@
+package CalculateMenuActivity.MaterialAdapter
+
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rantekscalc.AppPrefs
-import com.example.rantekscalc.MaterialAdapter
 import com.example.rantekscalc.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 

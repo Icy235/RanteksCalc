@@ -1,11 +1,12 @@
-package com.example.rantekscalc
+package CalculateMenuActivity.MaterialAdapter
 
-import android.util.Log
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rantekscalc.R
 
 class MaterialAdapter(
     private val materials: List<String>,
@@ -20,7 +21,7 @@ class MaterialAdapter(
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_material, parent, false)
         return ViewHolder(view)
-        Log.d("MaterialBottomSheet", "onViewCreated called")
+
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -29,7 +30,7 @@ class MaterialAdapter(
         holder.itemView.setOnClickListener {
             onMaterialSelected(material)
 
-            Log.d("MaterialBottomSheet", "material called")// Выбираем материал
+
         }
     }
 

@@ -1,18 +1,24 @@
-package com.example.rantekscalc;
+package SettingsMenuActivity;
+
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import com.example.rantekscalc.R;
 
 public class MaterialSelectSettings extends AppCompatActivity {
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material_select_settings);
+
+
 
     }
 

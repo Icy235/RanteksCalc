@@ -1,10 +1,14 @@
-package com.example.rantekscalc;
+package SettingsMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import TutorialActivity.HelperCalculate;
+import com.example.rantekscalc.ProfileListMenu;
+import com.example.rantekscalc.R;
 
 
 public class SettingsPage extends AppCompatActivity {
@@ -14,6 +18,7 @@ public class SettingsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_page);
+
 
     }
 

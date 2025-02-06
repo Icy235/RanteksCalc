@@ -26,10 +26,10 @@
             android:id="@+id/editTextProfileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autofillHints="Имя заказа"
+            android:hint="Имя заказа"
             android:inputType="text"
             android:textStyle="bold"
-            tools:ignore="LabelFor" />
+            tools:ignore="Autofill,LabelFor" />
         <!-- Загруженность производства -->
         <LinearLayout
             style="@style/BaseCalculateModule"
@@ -125,7 +125,7 @@
                 android:background="@android:color/transparent"
                 android:gravity="start"
                 android:text="Цена"
-                android:onClick="btnMaterial" />
+                android:onClick="btnCalculateMenuProfile"/>
 
             <FrameLayout
                 android:elevation="@dimen/cardview_default_radius"

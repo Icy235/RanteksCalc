@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".CalculateMenu">
+    tools:context="CalculateMenuActivity.CalculateMenu">
 
 
 
@@ -63,7 +63,7 @@
                     style="@style/BaseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Цена за кг"/>
+                    android:text="@string/cost_for_kg"/>
 
 
                 <LinearLayout
@@ -97,7 +97,7 @@
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
                         <TextView
                             style="@style/VariantText"
@@ -125,7 +125,7 @@
                     style="@style/BaseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Цена за кг"/>
+                    android:text="@string/cost_for_kg"/>
 
 
                 <LinearLayout
@@ -159,7 +159,7 @@
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
                         <TextView
                             style="@style/VariantText"
@@ -187,7 +187,7 @@
                     style="@style/BaseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Цена за кг"/>
+                    android:text="@string/cost_for_kg"/>
 
 
                 <LinearLayout
@@ -221,7 +221,7 @@
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
                         <TextView
                             style="@style/VariantText"
@@ -249,7 +249,7 @@
                     style="@style/BaseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Цена за кг"/>
+                    android:text="@string/cost_for_kg"/>
 
 
                 <LinearLayout
@@ -283,7 +283,7 @@
                             android:paddingStart="10sp"
                             android:paddingEnd="10sp"
                             android:textSize="30sp"
-                            tools:ignore="LabelFor" />
+                            tools:ignore="InefficientWeight,LabelFor" />
 
                         <TextView
                             style="@style/VariantText"
@@ -329,7 +329,8 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.961" />
+            app:layout_constraintVertical_bias="0.961"
+            tools:ignore="OnClick" />
     </LinearLayout>
 
 

@@ -1,19 +1,22 @@
-package com.example.rantekscalc;
+package CalculateMenuActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.rantekscalc.AppPrefs;
+import CalculateMenuActivity.MaterialAdapter.MaterialAdapter;
+import com.example.rantekscalc.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +29,7 @@ public class MaterialCalculate extends AppCompatActivity {
     private EditText editTextPricePerKg;
     private List<String> items;
 
+    @SuppressLint("CutPasteId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +46,11 @@ public class MaterialCalculate extends AppCompatActivity {
         materialPrice.setText(appPrefs.getPriceMaterialKey());
 
         selectMaterialButton.setOnClickListener(view -> showBottomSheet());
+
     }
 
     private void showBottomSheet() {
-        View bottomSheetView = LayoutInflater.from(MaterialCalculate.this)
+        @SuppressLint("InflateParams") View bottomSheetView = LayoutInflater.from(MaterialCalculate.this)
                 .inflate(R.layout.bottom_sheet_materials, null);
         recyclerView = bottomSheetView.findViewById(R.id.recyclerViewMaterials);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -80,6 +85,7 @@ public class MaterialCalculate extends AppCompatActivity {
         String priceString = materialPrices.getOrDefault(material, "40");
 
         try {
+            assert priceString != null;
             return Integer.parseInt(priceString);
         } catch (NumberFormatException e) {
             return 40;

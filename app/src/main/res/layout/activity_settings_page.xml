@@ -42,22 +42,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
-        android:visibility="gone">
+        android:visibility="visible">
+    <!-- @TODO Не забыть убрать видимость перед релизом -->
+
 
         <Button
-            android:id="@+id/Eror"
+            android:id="@+id/SettingsOther"
             android:layout_width="279dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
             style="@style/BaseText"
             android:onClick="btnOther"
-            android:text="@string/other"
+            android:text="Система профилей"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.961" />
+            app:layout_constraintVertical_bias="0.961"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <LinearLayout

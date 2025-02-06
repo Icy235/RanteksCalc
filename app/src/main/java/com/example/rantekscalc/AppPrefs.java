@@ -39,7 +39,7 @@ public class AppPrefs {
     }
 
     public String getRent() {
-        return sharedPreferences.getString(RENT_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(RENT_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
     // Методы для работы с "Наценкой"
@@ -49,7 +49,7 @@ public class AppPrefs {
     }
 
     public String getMarkup() {
-        return sharedPreferences.getString(MARKUP_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(MARKUP_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
 
@@ -59,7 +59,7 @@ public class AppPrefs {
     }
 
     public String getPricePerKm() {
-        return sharedPreferences.getString(PRICE_PER_KM_KEY, "0");// Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(PRICE_PER_KM_KEY, "");// Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setDistance(String distance) {
@@ -68,7 +68,7 @@ public class AppPrefs {
     }
 
     public String getDistance() {
-        return sharedPreferences.getString(DISTANCE_KEY, "0");// Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(DISTANCE_KEY, "");// Возвращаем сохраненное значение или "ошибку"
     }
 
 
@@ -78,7 +78,7 @@ public class AppPrefs {
     }
 
     public String getMassMaterialKey() {
-        return sharedPreferences.getString(MASS_MATERIAL_KEY, "0");// Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(MASS_MATERIAL_KEY, "");// Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setPriceMaterialKey(String price) {
@@ -87,7 +87,7 @@ public class AppPrefs {
     }
 
     public String getPriceMaterialKey() {
-        return sharedPreferences.getString(PRICE_MATERIAL_KEY, "0");// Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(PRICE_MATERIAL_KEY, "");// Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setWorkTimeKey(String markup) {
@@ -96,7 +96,7 @@ public class AppPrefs {
     }
 
     public String getWorkTimeKey() {
-        return sharedPreferences.getString(WORK_TIME_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(WORK_TIME_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setWorkPriceKey(String markup) {
@@ -116,7 +116,7 @@ public class AppPrefs {
     }
 
     public String getMaterial1PriceKey() {
-        return sharedPreferences.getString(MATERIAL_1_PRICE_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(MATERIAL_1_PRICE_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setMaterial2PriceKey(String markup) {
@@ -125,7 +125,7 @@ public class AppPrefs {
     }
 
     public String getMaterial2PriceKey() {
-        return sharedPreferences.getString(MATERIAL_2_PRICE_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(MATERIAL_2_PRICE_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setMaterial3PriceKey(String markup) {
@@ -134,7 +134,7 @@ public class AppPrefs {
     }
 
     public String getMaterial3PriceKey() {
-        return sharedPreferences.getString(MATERIAL_3_PRICE_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(MATERIAL_3_PRICE_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
     public void setMaterial4PriceKey(String markup) {
@@ -143,7 +143,7 @@ public class AppPrefs {
     }
 
     public String getMaterial4PriceKey() {
-        return sharedPreferences.getString(MATERIAL_4_PRICE_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(MATERIAL_4_PRICE_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
 
@@ -154,7 +154,7 @@ public class AppPrefs {
     }
 
     public String getOtherPriceKey() {
-        return sharedPreferences.getString(OTHER_PRICE_KEY, "0"); // Возвращаем сохраненное значение или "ошибку"
+        return sharedPreferences.getString(OTHER_PRICE_KEY, ""); // Возвращаем сохраненное значение или "ошибку"
     }
 
 

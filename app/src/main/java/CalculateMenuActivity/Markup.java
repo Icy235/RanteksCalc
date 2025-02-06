@@ -1,10 +1,13 @@
-package com.example.rantekscalc;
+package CalculateMenuActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.rantekscalc.AppPrefs;
+import com.example.rantekscalc.R;
 
 public class Markup extends AppCompatActivity {
     private AppPrefs appPrefs;
@@ -18,6 +21,7 @@ public class Markup extends AppCompatActivity {
 
         EditText et = findViewById(R.id.editTextMarkup);
         et.setText(appPrefs.getMarkup()); // Загружаем сохраненное значение
+
     }
 
     public void saveMarkup(View view) {
