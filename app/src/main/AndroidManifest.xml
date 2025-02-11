@@ -17,20 +17,26 @@
         android:roundIcon="@drawable/ic_logo_fav_temp"
         android:supportsRtl="true"
         android:theme="@style/Theme.RanteksCalc"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        tools:ignore="DiscouragedApi,LockedOrientationActivity"
+        >
 
 
         <activity
             android:name="SettingsMenuActivity.SettingsPage"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            />
 
         <activity
             android:name="TutorialActivity.TutorialMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="TutorialActivity.HelperMain"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait">
 
 
             <intent-filter>
@@ -48,85 +54,102 @@
 
         <activity
             android:name="SettingsMenuActivity.LogisticPrice"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="CalculateMenuActivity.LogisticCalculate"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
 
 
 
         <activity
             android:name="CalculateMenuActivity.Rent"
-            android:exported="false"/>
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
 
         <activity
             android:name="CalculateMenuActivity.CalculateMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="CalculateMenuActivity.MaterialCalculate"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="CalculateMenuActivity.WorkCalculate"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="SettingsMenuActivity.WorkSettings"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
 
         <activity
             android:name="CalculateMenuActivity.Markup"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="SettingsMenuActivity.MaterialSettings"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".ChangeLog"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
 
         <activity
             android:name="CalculateMenuActivity.Other"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="SettingsMenuActivity.MaterialSelectSettings"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name="SettingsMenuActivity.MaterialNameSettings"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
 
 
         <activity
             android:name=".ProfileListMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".MainMenu"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
-        </activity>
+
 
         <activity
             android:name="TutorialActivity.CalculateTutorial"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
-        </activity>
+
 
         <activity
             android:name="TutorialActivity.HelperCalculate"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait"/>
 
-        </activity>
+
 
 
     </application>

@@ -25,7 +25,7 @@
     <string name="SettingsHead" translatable="true">Изменить параметры</string>
     <string name="CostRent" translatable="true">Цена помещения в месяц</string>
     <string name="CostForMass" translatable="true">руб за кг.</string>
-    <string name="Version">1.1.1</string>
+    <string name="Version">1.1.2</string>
     <string name="NumberExample">123456</string>
     <string name="ChoiceMaterial" translatable="true">Выбор материала</string>
 
