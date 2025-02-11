@@ -8,8 +8,8 @@
     tools:context=".MainMenu">
 
 
-
     <LinearLayout
+        android:id="@+id/linearLayout18"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -19,12 +19,14 @@
             android:id="@+id/btnHelp"
             android:layout_width="50sp"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:layout_marginTop="20sp"
             android:layout_marginEnd="20sp"
+            android:background="@drawable/shape_input_field"
+            android:contentDescription="help"
             android:padding="10sp"
             app:srcCompat="@android:drawable/ic_menu_help"
-            android:layout_gravity="end"
-            android:background="@drawable/shape_input_field"/>
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -35,72 +37,66 @@
             app:srcCompat="@drawable/ic_logo_fav_temp" />
 
         <LinearLayout
-            android:elevation="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center"
+            android:layout_marginTop="90dp"
             android:background="@drawable/shape_button_background"
-            android:layout_marginTop="90dp">
+            android:elevation="30sp"
+            android:orientation="vertical">
 
 
             <Button
 
                 android:id="@+id/btnCalculate"
+                style="@style/VariantText"
                 android:layout_width="292dp"
                 android:layout_height="97dp"
                 android:layout_gravity="center"
-                android:onClick="CalculatePage"
                 android:background="@android:color/transparent"
-                style="@style/VariantText"
+                android:onClick="btnCalculatePage"
                 android:text="@string/Calculate"
                 tools:ignore="OnClick" />
-
-
-
 
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:elevation="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:background="@drawable/shape_button_background"
-            android:layout_marginTop="10dp">
+            android:elevation="30sp"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btnSettings"
+                style="@style/VariantText"
                 android:layout_width="292dp"
                 android:layout_height="97dp"
                 android:layout_gravity="center"
-                style="@style/VariantText"
                 android:background="@android:color/transparent"
-                android:onClick="settingsPage"
+                android:onClick="btnSettingsPage"
                 android:text="@string/SettingsHead"
                 tools:ignore="OnClick" />
 
         </LinearLayout>
 
         <Button
-            style="@style/BaseText"
-            android:background="@android:color/transparent"
             android:id="@+id/btnChangeLog"
+            style="@style/BaseText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="@string/Version"
             android:layout_gravity="center"
+
+            android:layout_marginTop="150dp"
+            android:background="@android:color/transparent"
             android:gravity="bottom"
-            android:layout_marginTop="150dp"/>
+            android:text="@string/Version" />
 
     </LinearLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

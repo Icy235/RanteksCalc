@@ -4,8 +4,9 @@
 
 
 
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RanteksCalc"
         tools:targetApi="31">
+
 
         <activity
             android:name="SettingsMenuActivity.SettingsPage"
@@ -125,8 +127,6 @@
             android:exported="false">
 
         </activity>
-
-
 
 
     </application>

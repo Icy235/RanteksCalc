@@ -13,15 +13,15 @@ android {
         applicationId = "com.example.rantekscalc"
         minSdk = 24
         targetSdk = 35
-        versionCode = 2
-        versionName = "1.1.0"
+        versionCode = 4
+        versionName = "1.1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             signingConfig = signingConfigs.getByName("debug")
 
         }
@@ -48,7 +48,7 @@ android {
 
 dependencies {
 
-    
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -57,6 +57,8 @@ dependencies {
     implementation(libs.firebase.inappmessaging)
     implementation(libs.androidx.cardview)
     implementation(libs.firebase.crashlytics.buildtools)
+
+
     //noinspection GradlePath
 
 

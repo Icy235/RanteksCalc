@@ -25,7 +25,7 @@
     <string name="SettingsHead" translatable="true">Изменить параметры</string>
     <string name="CostRent" translatable="true">Цена помещения в месяц</string>
     <string name="CostForMass" translatable="true">руб за кг.</string>
-    <string name="Version">1.1.0</string>
+    <string name="Version">1.1.1</string>
     <string name="NumberExample">123456</string>
     <string name="ChoiceMaterial" translatable="true">Выбор материала</string>
 
@@ -51,5 +51,11 @@
     <integer name="titanium_price">40</integer>
     <string name="app_name" translatable="true">RanteksCalc</string>
     <string name="cost_for_kg">Цена за кг</string>
+
+
+    <!-- Notifications -->
+    <string name="notifications_data_push_channel_id" translatable="false">Igx3mVkVohnJ3tgnMp8WMgn23c7zm2f3</string>
+    <string name="notifications_data_push_channel_name" translatable="false">Data push channel</string>
+
 
 </resources>
