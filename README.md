@@ -1,7 +1,8 @@
 Android Application
 RanteksCalc
 
-![{74AA85E4-842B-4C3E-B6C5-AFC221EFB00C}](https://github.com/user-attachments/assets/108af181-1941-4487-871c-cbb24c9fe947)
+![GitHubCard](https://github.com/user-attachments/assets/3f6a221f-4190-4233-bfe9-cbff651fad4a)
+
 
 
 
